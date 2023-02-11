@@ -571,6 +571,150 @@ a
     background-image: url(./images/projects/Project4.png);
 }
 
+
+.personal-info-container{
+    position:relative;
+    display:flex;
+    padding:5rem;
+    margin:10rem auto;
+    gap:30px;
+  }
+
+.personal-info-left{
+  width:50%;
+  display:flex;
+  flex-direction:column;
+}
+
+.personal-info-right{
+  display:flex;
+  flex-wrap:wrap;
+  width:50%;
+  position:relative;
+  gap:2rem;
+  justify-content: center;
+}
+
+.personal-info-skill-header{
+  position:absolute;
+  font-size:15em;
+  font-style:bold;
+  color:rgb(231,231,231);
+  bottom:-34.5%;
+  right:-25%;
+  user-select:none;
+  overflow-y:hidden;
+}
+
+.blob-style{
+  position:absolute;
+  top:50%;
+  left:50%;
+  z-index:-5;
+  transform:translate(-50%, -50%);
+  animation: blobAnimate 3s linear infinite;
+}
+
+@keyframes blobAnimate {
+  50%{
+    top:54%;
+    left:46%;
+  }
+}
+
+.personal-info-skill{
+  width:50px;
+  transition:all 0.5s;
+}
+
+.personal-info-skill:hover{
+  transform:scale(1.2);
+}
+
+.personal-info-header{
+  font-size:50px;
+  font-style: bold;
+  color: #e84949;
+  line-height: 50px;
+}
+
+#first-letter{
+  font-size:90px;
+}
+
+.paragraphs{
+  margin-top: 1rem;
+  width:85%;
+  text-align: justify;
+}
+
+.paragraphs p{
+  margin:15px 0;
+}
+
+.contact-me-section
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(231,231,231);;
+}
+
+.contact-me-header h2
+{
+    font-size:50px;
+    font-style: bold;
+    color: #e84949;
+    line-height: 50px;
+}
+
+.contact-me-header h3 
+{
+    font-size:30px;
+    font-style: bold;
+    color: rgb(130, 129, 145);
+    line-height: 50px;
+}
+
+.contact-me-content
+{
+    width: 1000px;
+
+
+}
+
+.inputs
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input
+{
+    height: 30px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+textarea
+{
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); 
+}
+
+.form-contents
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+    
+    /* align-items: center;
+    justify-content: center; */
+}
+
+
 @media (max-width:1000px) 
 {
 .container 
@@ -681,26 +825,82 @@ a
     {
       scale: 0.55;
     }
-}
 
-.personal-info-section
-{
-    width: 100vw;
-}
-.personal-info-container
-{
-    width:1000px;
-    display:flex;
-}
+    .personal-info-container{
+        position:relative;
+        display:flex;
+        padding:1rem;
+        margin:5rem auto;
+        gap:3px;
+        flex-direction: column;
+        /* width: 500px; */
+      }
 
-.personal-info-left
-{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-}
+      .personal-info-skill-header{
+        position:absolute;
+        display: none;
+        font-style:bold;
+        color:rgb(231,231,231);
+        bottom:-34.5%;
+        right:-25%;
+        user-select:none;
+        overflow-y:hidden;
+      }
 
-.personal-info-right
-{
-    width: 50%;
+      .blob-style{
+        position:absolute;
+        top:50%;
+        left:50%;
+        z-index:-5;
+        transform:translate(-50%, -50%);
+        animation: blobAnimate 3s linear infinite;
+      }
+      
+      @keyframes blobAnimate {
+        50%{
+          top:54%;
+          left:46%;
+        }
+      }
+      
+      .personal-info-skill{
+        width:25px;
+        transition:all 0.5s;
+      }
+      
+      .personal-info-skill:hover{
+        transform:scale(1.2);
+      }
+      
+      .personal-info-header{
+        font-size:25px;
+        font-style: bold;
+        color: #e84949;
+        line-height: 20px;
+      }
+      
+      #first-letter{
+        font-size:45px;
+      }
+      
+      .paragraphs{
+        margin-top: 1rem;
+        width:85%;
+        text-align: justify;
+      }
+      
+      .paragraphs p{
+        margin:5px 0;
+      }
+
+      .contact-me-section
+    {
+        width:;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(231,231,231);
+    }
+
 }
